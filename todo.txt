@@ -1,0 +1,2 @@
+this should be a simple one line script call from command line
+will want to include list of GPIO pin numbers (assume BCM) and topic and host
