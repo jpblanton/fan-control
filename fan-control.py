@@ -11,6 +11,9 @@ def cleanup(client):
     client.loop_stop()
 
 
+# consider a topic that would affect all fans at once
+# or eg tent1/fans/all tent1/fans/1 tent1/fans/2 etc
+# tent1/allfans/status
 def on_message(client, userdata, message):
     # tentX/fanY/status
     # look into how to subscribe since we'll need a few
