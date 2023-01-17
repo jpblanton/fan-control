@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  fancontrol:
+    build: .
+    devices:
+      - /dev/mem:/dev/mem
+      - /dev/gpiomem:/dev/gpiomem
+    command: python3 fan-control.py --host "test.mosquitto.org" --gpio 12 16 --topics "tent1/fan1/test" "tent1/fan2/test"
